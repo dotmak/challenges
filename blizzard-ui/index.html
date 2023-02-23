@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/stylesheets/styles.css">
+  <title>Blizzard Games</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/logo/battlenet.svg">
+</head>
+<body class="min-h-screen bg-[url('./assets/images/background/games.jpg')] relative">
+
+  <!-- HEADER -->
+  <div class="header max-w-[90%] mx-auto md:max-w-[100%] md:px-5 py-[3rem]">
+
+    <!-- HORIZONTAL HEADER -->
+    <div class="header__horizontal-nav flex flex-row justify-between items-center">
+      <div class="header__logo">
+        <a href="#"><img src="assets/images/logo/battlenet.svg" class="w-[70px]" alt=""></a>
+      </div>
+
+      <div class="header__menu hidden md:block text-white  flex flex-row gap-10">
+        <a href="#" class="mx-4 text-xl menu-active relative hover:text-[#0288D1]">Games</a>
+        <a href="#" class="mx-4 text-xl hover:text-[#0288D1] transition-all	duration-500">Social</a>
+        <a href="#" class="mx-4 text-xl hover:text-[#0288D1] transition-all	duration-500">Shop</a>
+        <a href="#" class="mx-4 text-xl hover:text-[#0288D1] transition-all	duration-500">News</a>
+      </div>
+
+      <div class="header__user flex flex-row items-center gap-5 md:mr-5">
+        <div class="avatar-container flex flex-row gap-2">
+          <div class="header__user-actions flex-col items-end hidden md:flex">
+            <h3 class="header__user-name text-white text-xl">TheSkiu</h3>
+            <span class="header__user-status text-lime-500 text-sm mr-3 relative">Online</span>
+          </div>
+
+          <div class="header__user-avatar relative">
+            <img src="assets/images/avatar/wow.jpg" class="w-[50px] rounded-full" alt="">
+          </div>
+        </div>
+
+        <div class="header__user-friends flex flex-row gap-1 hidden md:flex">
+          <span class="text-white text-base">14</span>
+          <img src="assets/images/online-friends-icon.svg" class="w-[15px] invert" alt="">
+        </div>
+
+        <div class="burger-icon flex flex-col justify-between h-[20px] z-50 cursor-pointer md:hidden">
+          <span class="first bg-white h-[2px] w-[40px] transform transition-all"></span>
+          <span class="second bg-white h-[2px] w-[40px] transform transition-all"></span>
+          <span class="third bg-white h-[2px] w-[21px] transform transition-all duration-500"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- VERTICAL HEADER -->
+    <div class="header__vertical-nav hidden md:block absolute left-0 flex flex-col justify-between p-5">
+      <div class="header__title text-white mb-2 mt-5">BLIZZARD</div>
+      <div class="header__games flex flex-col gap-9">
+        <a href="#"><img src="assets/images/game-icons/wow.png" class="rounded-2xl w-[65px] mx-auto" alt=""></a>
+        <a href="#"><img src="assets/images/game-icons/diablo.png" class="rounded-2xl w-[65px] mx-auto" alt=""></a>
+        <a href="#"><img src="assets/images/game-icons/starcraft.png" class="rounded-2xl w-[65px] mx-auto" alt=""></a>
+        <a href="#"><img src="assets/images/game-icons/heartstone.png" class="rounded-2xl w-[65px] mx-auto" alt=""></a>
+        <a href="#"><img src="assets/images/game-icons/heroes.png" class="rounded-2xl w-[65px] mx-auto" alt=""></a>
+        <a href="#"><img src="assets/images/game-icons/overwatch.png" class="rounded-2xl w-[65px] mx-auto" alt=""></a>
+        <a href="#"><img src="assets/images/game-icons/starcraft_remastered.png" class="rounded-2xl w-[65px] mx-auto" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN BODY -->
+  <div class="main-wrapper max-w-[90%] md:max-w-[65%] mx-auto text-white md:mt-[4rem] pb-4">
+    <div class="news">
+      <h2 class="mb-2">What's new?</h2>
+      <div class="news__articles-wrapper flex flex-col md:flex-row gap-5">
+        <a href="#"><img src="assets/images/whats-new/overwatch-league.png" class="rounded-2xl" alt=""></a>
+        <a href="#"><img src="assets/images/whats-new/the-boomsday-project.png" class="rounded-2xl" alt=""></a>
+        <a href="#"><img src="assets/images/whats-new/wowt-battle-for-azeroth.png" class="rounded-2xl" alt=""></a>
+      </div>
+    </div>
+
+    <div class="games mt-[3rem]">
+      <h2 class="mb-2">Play now!</h2>
+      <div class="games__games-wrapper grid grid-cols-3 md:flex md:flex-row gap-5">
+        <a class="hidden relative" href="#">
+          <img src="assets/images/games/wow.jpeg" class="rounded-2xl max-h-[200px]" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-black rounded-2xl flex justify-center items-center text-center">
+            LAUNCH GAME
+          </div>
+        </a>
+        <a class="hidden relative" href="#">
+          <img src="assets/images/games/diablo.jpeg" class="rounded-2xl max-h-[200px]" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-black rounded-2xl flex justify-center items-center text-center">
+            LAUNCH GAME
+          </div>
+        </a>
+        <a class="hidden relative" href="#">
+          <img src="assets/images/games/starcraft.jpeg" class="rounded-2xl max-h-[200px]" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-black rounded-2xl flex justify-center items-center text-center">
+            LAUNCH GAME
+          </div>
+        </a>
+        <a class="hidden relative" href="#">
+          <img src="assets/images/games/hearthstone.jpeg" class="rounded-2xl max-h-[200px]" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-black rounded-2xl flex justify-center items-center text-center">
+            LAUNCH GAME
+          </div>
+        </a>
+        <a class="hidden relative" href="#">
+          <img src="assets/images/games/heroes.jpeg" class="rounded-2xl max-h-[200px]" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-black rounded-2xl flex justify-center items-center text-center">
+            LAUNCH GAME
+          </div>
+        </a>
+        <a class="hidden relative" href="#">
+          <img src="assets/images/games/overwatch.jpeg" class="rounded-2xl max-h-[200px]" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-black rounded-2xl flex justify-center items-center text-center">
+            LAUNCH GAME
+          </div>
+        </a>
+        <a class="hidden relative" href="#">
+          <img src="assets/images/games/starcraft_remastered.jpeg" class="rounded-2xl max-h-[200px]" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-black rounded-2xl flex justify-center items-center text-center">
+            LAUNCH GAME
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
