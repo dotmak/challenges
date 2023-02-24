@@ -74,16 +74,34 @@
   <!-- MAIN BODY -->
   <div class="main-wrapper max-w-[90%] md:max-w-[65%] mx-auto text-white md:mt-[4rem] pb-4">
     <div class="news">
-      <h2 class="mb-2">What's new?</h2>
+      <div class="headings flex flex-row justify-between mb-2 items-center justify-center">
+        <h2 class="text-xl">What's new?</h2>
+        <h3 class="text-[0.7rem]"> SHOW MORE ></h3>
+      </div>
       <div class="news__articles-wrapper flex flex-col md:flex-row gap-5">
-        <a href="#"><img src="assets/images/whats-new/overwatch-league.png" class="rounded-2xl" alt=""></a>
-        <a href="#"><img src="assets/images/whats-new/the-boomsday-project.png" class="rounded-2xl" alt=""></a>
-        <a href="#"><img src="assets/images/whats-new/wowt-battle-for-azeroth.png" class="rounded-2xl" alt=""></a>
+        <a href="#" class="relative">
+          <img src="assets/images/whats-new/overwatch-league.png" class="rounded-2xl" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-[#0288D1] rounded-2xl flex justify-center items-center text-center">
+            READ MORE
+          </div>
+        </a>
+        <a class="relative" href="#">
+          <img src="assets/images/whats-new/the-boomsday-project.png" class="rounded-2xl" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-[#0288D1] rounded-2xl flex justify-center items-center text-center">
+            READ MORE
+          </div>
+        </a>
+        <a class="relative" href="#">
+          <img src="assets/images/whats-new/wowt-battle-for-azeroth.png" class="rounded-2xl" alt="">
+          <div class="games__game-overlay absolute left-0 top-0 w-full h-full bg-[#0288D1] rounded-2xl flex justify-center items-center text-center">
+            READ MORE
+          </div>
+        </a>
       </div>
     </div>
 
     <div class="games mt-[3rem]">
-      <h2 class="mb-2">Play now!</h2>
+      <h2 class="text-xl mb-2">Play now!</h2>
       <div class="games__games-wrapper grid grid-cols-3 md:flex md:flex-row gap-5">
         <a class="hidden relative" href="#">
           <img src="assets/images/games/wow.jpeg" class="rounded-2xl max-h-[200px]" alt="">
